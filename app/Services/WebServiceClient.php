@@ -2,7 +2,6 @@
 
 namespace App\Services;
 
-use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
 
@@ -53,17 +52,4 @@ class WebServiceClient {
 
         return $response;
     }
-
-    /**
-     * @param PromiseInterface|Response $response
-     * @return mixed
-     */
-    public function xmlToArray(PromiseInterface|Response $response)
-    {
-        $xml = simplexml_load_string($response->body());
-        $json = json_encode($xml);
-        $array = json_decode($json, TRUE);
-        return $array;
-    }
-
 }
