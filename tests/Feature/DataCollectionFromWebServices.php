@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Infrastructure\ResourceData;
 use App\Services\WebServiceClient;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,11 +19,13 @@ class DataCollectionFromWebServices extends TestCase
     {
         $webService = new WebServiceClient('https://api.first.org');
         $response = $webService->call(Request::METHOD_GET, '/data/v1/countries');
+        $resourceData = new ResourceData($response);
 
         $this->assertEquals(Response::HTTP_OK, $response->status());
-        $this->assertJson($response->body());
-        $this->assertIsObject($response->object());
-        $this->assertObjectHasAttribute('data', $response->object());
+        $this->assertJson($resourceData->getContent());
+        $this->assertIsObject($resourceData->toObject());
+        $this->assertObjectHasAttribute('data', $resourceData->getResponse()->object());
+        $this->assertArrayHasKey('list', $resourceData->parseData(['list' => 'data']));
     }
 
     /**
@@ -34,10 +37,12 @@ class DataCollectionFromWebServices extends TestCase
     {
         $webService = new WebServiceClient('https://api.first.org');
         $response = $webService->call(Request::METHOD_GET, '/data/v1/countries.xml', null, 'xml');
-        $xmlArray = $webService->xmlToArray($response);
 
+        $resourceData = new ResourceData($response);
         $this->assertEquals(Response::HTTP_OK, $response->status());
-        $this->assertIsArray($xmlArray);
-        $this->assertArrayHasKey('data', $xmlArray);
+        $this->assertIsObject($resourceData->toObject());
+        $this->assertObjectHasAttribute('data', $resourceData->toObject());
+        $this->assertArrayHasKey('list', $resourceData->parseData(['list' => 'data']));
+
     }
 }
