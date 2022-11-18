@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Infrastructure\ResourceData;
+use App\Infrastructure\Utilities\Mock;
 use App\Services\WebServiceClient;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpFoundation\Request;
@@ -44,5 +45,27 @@ class DataCollectionFromWebServices extends TestCase
         $this->assertObjectHasAttribute('data', $resourceData->toObject());
         $this->assertArrayHasKey('list', $resourceData->parseData(['list' => 'data']));
 
+    }
+
+    public function testDetectionOfJsonResponse()
+    {
+        Mock::fakeResponse('https://api.first.org/data/v1/countries', 'OrgApiFirstGetCountries.json');
+        $webService = new WebServiceClient('https://api.first.org');
+        $response = $webService->call(Request::METHOD_GET, '/data/v1/countries');
+
+        $resourceData = new ResourceData($response);
+        $this->assertEquals(Response::HTTP_OK, $response->status());
+        $this->assertEquals('json', $resourceData->getFormat());
+    }
+
+    public function testDetectionOfXmlResponse()
+    {
+        Mock::fakeResponse('https://api.first.org/data/v1/countries.xml', 'OrgApiFirstGetCountries.xml');
+        $webService = new WebServiceClient('https://api.first.org');
+        $response = $webService->call(Request::METHOD_GET, '/data/v1/countries.xml');
+
+        $resourceData = new ResourceData($response);
+        $this->assertEquals(Response::HTTP_OK, $response->status());
+        $this->assertEquals('xml', $resourceData->getFormat());
     }
 }

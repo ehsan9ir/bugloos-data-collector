@@ -1,0 +1,206 @@
+<response status="OK" status-code="200" version="1.0" access-control-allow-origin="*" access="public">
+    <data>
+        <item>
+            <dz>Algeria</dz>
+            <dz>Africa</dz>
+            <ao>Angola</ao>
+            <ao>Africa</ao>
+            <bj>Benin</bj>
+            <bj>Africa</bj>
+            <bw>Botswana</bw>
+            <bw>Africa</bw>
+            <bf>Burkina Faso</bf>
+            <bf>Africa</bf>
+            <bi>Burundi</bi>
+            <bi>Africa</bi>
+            <cv>Cabo Verde</cv>
+            <cv>Africa</cv>
+            <cm>Cameroon</cm>
+            <cm>Africa</cm>
+            <cf>Central African Republic (the)</cf>
+            <cf>Africa</cf>
+            <td>Chad</td>
+            <td>Africa</td>
+            <km>Comoros (the)</km>
+            <km>Africa</km>
+            <cd>Congo (the Democratic Republic of the)</cd>
+            <cd>Africa</cd>
+            <cg>Congo (the)</cg>
+            <cg>Africa</cg>
+            <ci>Côte d&#039;Ivoire</ci>
+            <ci>Africa</ci>
+            <dj>Djibouti</dj>
+            <dj>Africa</dj>
+            <eg>Egypt</eg>
+            <eg>Africa</eg>
+            <gq>Equatorial Guinea</gq>
+            <gq>Africa</gq>
+            <er>Eritrea</er>
+            <er>Africa</er>
+            <sz>Eswatini</sz>
+            <sz>Africa</sz>
+            <et>Ethiopia</et>
+            <et>Africa</et>
+            <ga>Gabon</ga>
+            <ga>Africa</ga>
+            <gm>Gambia (the)</gm>
+            <gm>Africa</gm>
+            <gh>Ghana</gh>
+            <gh>Africa</gh>
+            <gn>Guinea</gn>
+            <gn>Africa</gn>
+            <gw>Guinea-Bissau</gw>
+            <gw>Africa</gw>
+            <ke>Kenya</ke>
+            <ke>Africa</ke>
+            <ls>Lesotho</ls>
+            <ls>Africa</ls>
+            <lr>Liberia</lr>
+            <lr>Africa</lr>
+            <ly>Libya</ly>
+            <ly>Africa</ly>
+            <mg>Madagascar</mg>
+            <mg>Africa</mg>
+            <mw>Malawi</mw>
+            <mw>Africa</mw>
+            <ml>Mali</ml>
+            <ml>Africa</ml>
+            <mr>Mauritania</mr>
+            <mr>Africa</mr>
+            <mu>Mauritius</mu>
+            <mu>Africa</mu>
+            <yt>Mayotte</yt>
+            <yt>Africa</yt>
+            <ma>Morocco</ma>
+            <ma>Africa</ma>
+            <mz>Mozambique</mz>
+            <mz>Africa</mz>
+            <na>Namibia</na>
+            <na>Africa</na>
+            <ne>Niger (the)</ne>
+            <ne>Africa</ne>
+            <ng>Nigeria</ng>
+            <ng>Africa</ng>
+            <re>Réunion</re>
+            <re>Africa</re>
+            <rw>Rwanda</rw>
+            <rw>Africa</rw>
+            <sh>Saint Helena, Ascension and Tristan da Cunha</sh>
+            <sh>Africa</sh>
+            <st>Sao Tome and Principe</st>
+            <st>Africa</st>
+            <sn>Senegal</sn>
+            <sn>Africa</sn>
+            <sc>Seychelles</sc>
+            <sc>Africa</sc>
+            <sl>Sierra Leone</sl>
+            <sl>Africa</sl>
+            <so>Somalia</so>
+            <so>Africa</so>
+            <za>South Africa</za>
+            <za>Africa</za>
+            <ss>South Sudan</ss>
+            <ss>Africa</ss>
+            <sd>Sudan (the)</sd>
+            <sd>Africa</sd>
+            <tz>Tanzania, the United Republic of</tz>
+            <tz>Africa</tz>
+            <tg>Togo</tg>
+            <tg>Africa</tg>
+            <tn>Tunisia</tn>
+            <tn>Africa</tn>
+            <ug>Uganda</ug>
+            <ug>Africa</ug>
+            <eh>Western Sahara*</eh>
+            <eh>Africa</eh>
+            <zm>Zambia</zm>
+            <zm>Africa</zm>
+            <zw>Zimbabwe</zw>
+            <zw>Africa</zw>
+            <aq>Antarctica</aq>
+            <aq>Antarctic</aq>
+            <bv>Bouvet Island</bv>
+            <bv>Antarctic</bv>
+            <tf>French Southern Territories (the)</tf>
+            <tf>Antarctic</tf>
+            <hm>Heard Island and McDonald Islands</hm>
+            <hm>Antarctic</hm>
+            <gs>South Georgia and the South Sandwich Islands</gs>
+            <gs>Antarctic</gs>
+            <af>Afghanistan</af>
+            <af>Asia</af>
+            <am>Armenia</am>
+            <am>Asia</am>
+            <az>Azerbaijan</az>
+            <az>Asia</az>
+            <bd>Bangladesh</bd>
+            <bd>Asia</bd>
+            <bt>Bhutan</bt>
+            <bt>Asia</bt>
+            <io>British Indian Ocean Territory (the)</io>
+            <io>Asia</io>
+            <bn>Brunei Darussalam</bn>
+            <bn>Asia</bn>
+            <kh>Cambodia</kh>
+            <kh>Asia</kh>
+            <cn>China</cn>
+            <cn>Asia</cn>
+            <ge>Georgia</ge>
+            <ge>Asia</ge>
+            <hk>Hong Kong</hk>
+            <hk>Asia</hk>
+            <in>India</in>
+            <in>Asia</in>
+            <id>Indonesia</id>
+            <id>Asia</id>
+            <jp>Japan</jp>
+            <jp>Asia</jp>
+            <kz>Kazakhstan</kz>
+            <kz>Asia</kz>
+            <kp>Korea (the Democratic People&#039;s Republic of)</kp>
+            <kp>Asia</kp>
+            <kr>Korea (the Republic of)</kr>
+            <kr>Asia</kr>
+            <kg>Kyrgyzstan</kg>
+            <kg>Asia</kg>
+            <la>Lao People&#039;s Democratic Republic (the)</la>
+            <la>Asia</la>
+            <mo>Macao</mo>
+            <mo>Asia</mo>
+            <my>Malaysia</my>
+            <my>Asia</my>
+            <mv>Maldives</mv>
+            <mv>Asia</mv>
+            <mn>Mongolia</mn>
+            <mn>Asia</mn>
+            <mm>Myanmar</mm>
+            <mm>Asia</mm>
+            <np>Nepal</np>
+            <np>Asia</np>
+            <pk>Pakistan</pk>
+            <pk>Asia</pk>
+            <ph>Philippines (the)</ph>
+            <ph>Asia</ph>
+            <sg>Singapore</sg>
+            <sg>Asia</sg>
+            <lk>Sri Lanka</lk>
+            <lk>Asia</lk>
+            <tw>Taiwan (Province of China)</tw>
+            <tw>Asia</tw>
+            <tj>Tajikistan</tj>
+            <tj>Asia</tj>
+            <th>Thailand</th>
+            <th>Asia</th>
+            <tl>Timor-Leste</tl>
+            <tl>Asia</tl>
+            <tm>Turkmenistan</tm>
+            <tm>Asia</tm>
+            <uz>Uzbekistan</uz>
+            <uz>Asia</uz>
+            <vn>Viet Nam</vn>
+            <vn>Asia</vn>
+            <bz>Belize</bz>
+            <bz>Central America</bz>
+        </item>
+    </data>
+</response>
