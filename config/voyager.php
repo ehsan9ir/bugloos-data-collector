@@ -189,11 +189,14 @@ return [
 
     // Here you can specify additional assets you would like to be included in the master.blade
     'additional_css' => [
-        //'css/custom.css',
+        'assets/admin/css/custom-voyager.css',
+        'assets/admin/css/persian-datepicker.min.css',
     ],
 
     'additional_js' => [
-        //'js/custom.js',
+        'assets/admin/js/persian-date.min.js',
+        'assets/admin/js/persian-datepicker.min.js',
+        'assets/admin/js/custom-voyager.js',
     ],
 
     'googlemaps' => [
