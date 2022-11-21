@@ -22,9 +22,16 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|RequestDataResponses whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RequestDataResponses whereRequestId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RequestDataResponses whereUpdatedAt($value)
+ * @property-read \App\Models\WebserviceRequests|null $webserviceRequest
  */
 class GeneralDataResponses extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
+    protected $table = 'general_data_responses';
+
+    public function webserviceRequest()
+    {
+        return $this->morphOne(WebserviceRequests::class, 'modelable');
+    }
 }

@@ -3,6 +3,9 @@
     "status-code": 200,
     "version": "1.0",
     "access": "public",
+    "info" : {
+        "image": "https://lordinet.com/upload/image/2021/6cf9244e8892042f9b89b080165597df@900_530.jpeg"
+    },
     "data": [
         {
             "id": "a2a-cert-it",

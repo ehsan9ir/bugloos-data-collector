@@ -25,6 +25,7 @@ return new class extends Migration
             $table->json('response_template');
             $table->enum('response_type', Webservice::$responseTypes)->default(Webservice::JSON_TYPE_RESPONSE);
             $table->enum('storage_type', Webservice::$storageTypes)->default(Webservice::GENERAL_TYPE_STORAGE);
+            $table->string('storage_model', 140)->nullable();
             $table->string('schedule_frequency', 80)->nullable();
             $table->timestamps();
         });

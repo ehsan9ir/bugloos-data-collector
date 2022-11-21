@@ -36,6 +36,9 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Webservice whereToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Webservice whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Webservice whereUrl($value)
+ * @method static \Database\Factories\WebserviceFactory factory(...$parameters)
+ * @property string|null $storage_model
+ * @method static \Illuminate\Database\Eloquent\Builder|Webservice whereStorageModel($value)
  */
 class Webservice extends Model
 {

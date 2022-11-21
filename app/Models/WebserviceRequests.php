@@ -28,6 +28,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|WebserviceRequests whereStatusCode($value)
  * @method static \Illuminate\Database\Eloquent\Builder|WebserviceRequests whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|WebserviceRequests whereWebserviceId($value)
+ * @method static \Database\Factories\WebserviceRequestsFactory factory(...$parameters)
  */
 class WebserviceRequests extends Model
 {
