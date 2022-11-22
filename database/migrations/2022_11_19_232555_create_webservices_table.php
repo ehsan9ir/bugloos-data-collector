@@ -27,6 +27,7 @@ return new class extends Migration
             $table->enum('storage_type', Webservice::$storageTypes)->default(Webservice::GENERAL_TYPE_STORAGE);
             $table->string('storage_model', 140)->nullable();
             $table->string('schedule_frequency', 80)->nullable();
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }

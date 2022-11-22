@@ -23,6 +23,9 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|RequestDataResponses whereRequestId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|RequestDataResponses whereUpdatedAt($value)
  * @property-read \App\Models\WebserviceRequests|null $webserviceRequest
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+ * @mixin IdeHelperGeneralDataResponses
  */
 class GeneralDataResponses extends Model
 {

@@ -39,11 +39,20 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Database\Factories\WebserviceFactory factory(...$parameters)
  * @property string|null $storage_model
  * @method static \Illuminate\Database\Eloquent\Builder|Webservice whereStorageModel($value)
+ * @property int $is_active
+ * @method static \Illuminate\Database\Eloquent\Builder|Webservice whereIsActive($value)
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+ * @mixin IdeHelperWebservice
+ * @property-read mixed $payload_array
+ * @property-read mixed $response_template_array
  */
 class Webservice extends Model
 {
     use HasFactory;
     protected $guarded= ['id'];
+
+//    protected $attributes = ['payload_array', 'response_template_array'];
 
     public const JSON_TYPE_RESPONSE = 'json';
     public const XML_TYPE_RESPONSE = 'xml';
@@ -53,4 +62,16 @@ class Webservice extends Model
 
     public static array $responseTypes = [self::JSON_TYPE_RESPONSE, self::XML_TYPE_RESPONSE];
     public static array $storageTypes = [self::GENERAL_TYPE_STORAGE, self::SEPARATE_TYPE_STORAGE];
+
+    public function getPayloadArray()
+    {
+        $value = $this->payload;
+        return isset($value) ? json_decode($value, true) : null;
+    }
+
+    public function getResponseTemplateArray()
+    {
+        $value = $this->response_template;
+        return isset($value) ? json_decode($value, true) : [];
+    }
 }
