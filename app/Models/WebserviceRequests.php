@@ -29,6 +29,9 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|WebserviceRequests whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|WebserviceRequests whereWebserviceId($value)
  * @method static \Database\Factories\WebserviceRequestsFactory factory(...$parameters)
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+ * @mixin IdeHelperWebserviceRequests
  */
 class WebserviceRequests extends Model
 {
