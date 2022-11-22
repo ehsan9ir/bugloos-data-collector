@@ -37,4 +37,5 @@ class WebserviceRequests extends Model
 {
     use HasFactory;
     protected $guarded= ['id'];
+    protected $table = 'webservice_requests';
 }
